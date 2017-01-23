@@ -5,6 +5,6 @@ then
 	rm -rf ./*.zip
 fi
 
-node install
+npm install
 zip -r diceRoll.zip *
 aws lambda update-function-code --function-name sr71 --zip-file fileb://diceRoll.zip
